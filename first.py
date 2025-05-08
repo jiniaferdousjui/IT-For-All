@@ -52,4 +52,59 @@ elif temp > 10:
     print("nice")
 else:
     print("cold")
-# print("done")
+    # print("done")
+age = 28
+if age >= 25:
+    message = "Eligible"
+else:
+    message = "Non Eligible"
+print(message)
+message = "Eligible" if age >= 30 else "Not Eligible"  # turnery operator
+print(message)
+# logical operator
+# and: if both statement is true then the ans would be yes
+high_cg = False
+ielts_score = True
+student = False
+if high_cg and ielts_score:
+    print("pass")
+else:
+    print("failed")
+# or operator: if one will true result would be yes
+if high_cg or ielts_score:
+    print("ok")
+else:
+    print("not ok")
+# multiple conditions
+if (high_cg or ielts_score) and not student:
+    print("fine")
+else:
+    print("not fine")
+# short-circuit evaluation
+# when it's connected with and operators if one statement is false it stops evaluating, in or operators if one statement is true it stops evaluating
+# chaining comparison operators
+age = 30
+# if age <= 40 and age >= 20:
+# print("ok") can be written as
+if 20 <= age <= 40:
+    print("ook")
+# for loops
+# to stop doing the same code we create a loop like:
+for number in range(5):
+    print("try again", number + 1, (number + 1) * ".")
+for number in range(1, 10, 2):
+    print("attempt", number, number * "/")
+# rules of For...else that means opearation repeatation would stop if certain action happens
+successful = False
+for number in range(1, 4):
+    print("nice try")
+    if successful:
+        print("successful")
+        break
+# if after trying this time and still failed and want to show a different message
+else:
+    print("Attempted 4 times and failed")
+# nested loop
+for x in range(1, 5):
+    for y in range(1, 5):
+        print(f"{x},{y}")
