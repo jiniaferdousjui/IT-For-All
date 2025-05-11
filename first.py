@@ -108,3 +108,25 @@ else:
 for x in range(1, 5):
     for y in range(1, 5):
         print(f"{x},{y}")
+# iterable
+for x in "Python":
+    print(x)
+for x in [1, 2, 3, 4]:  # [] means listing
+    print(x)
+students = ["jui", "jinia", "ferdous"]
+for student in students:                 # if we did it manually it'd look like
+    # students = ["jui","jinia","ferdous"]
+    print("student's name", ":", student)
+    # print("name",":",students[0])
+    # print("name",":",students[1])
+    # print("name",":",students[2])
+# while loop : repeat something until a condition is true
+number = 100
+while number > 0:
+    number //= 2
+    print(number)
+# need to open in terminal
+command = ""
+while command != "quit" and "QUIT":
+    command = input(">")
+    print("echo", command)
